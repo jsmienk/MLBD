@@ -24,7 +24,39 @@ Make sure the N is configurable for every program!
 
 ### 2. Collaborative filtering
 
-More information will be added soon about this part of the assignment.
+#### Analyzing the given ratings dataset
+
+For collaborative filtering the ratings given by the users are used to produce movie recommendations for a user. To get insight in the ratings given, show graphs in which the characteristics of the ratings are shown:
+
+- Distribution of how often a movie is rated
+- Distribution of how often a specific rating was given
+- Distribution of the average ratings given to a movie
+- Distribution of the average ratings given by the users
+- Something you want to learn from the data set
+
+#### User-item matrix
+
+Set up the user-item matrix using the provided data set.
+
+#### User-user recommendation
+
+Derive user-user similarity matrices based on:
+
+- Cosine similarity
+- Pearson similarity
+- Adjusted cosine similarity
+
+and give N (configurable) recommendations for a given user U (configurable) derived from the ratings of the 10 most similar users for each of these similarities.
+
+#### Item-Item recommendation
+
+Derive item-item similarity matrices based on the same metrics as the previous exercise and give N (configurable) recommendations for a given user U (configurable) based on the movies the user U rated with at least 3.5 stars. Explain your strategy!
+
+#### Validation
+
+Evaluate the accuracy of both the user-user and the item-item collaborative filtering recommendations using the metrics RMSE and hit rate.
+
+The last cell of your notebook should consist of a small program with Jupyter widgets and the provided Python module which should do the following: Select a recommendation type (user-user or item-item) and similarity measure and show the N recommendations and optionally the calculated ratings per recommendation.
 
 ### 3. Latent factor based
 
