@@ -60,7 +60,7 @@ The last cell of your notebook should consist of a small program with Jupyter wi
 
 ### 3. Latent factor based
 
-More information will be added soon about this part of the assignment.
+Implement a recommendation for a user, using ALS from the Spark MLlib. Determine with a grid-search the optimal parameters (`nrOfIterations`, rank (`nrOfFactors`) and lambda) for the ALS algorithm. Upload the provided dataset to databricks. Compare the accuracy of your optimal ALS implementation with the accuracy of the collaborative filtering algorithm you implemented in the previous part of the assignment. Your implementation has to be able to give a recommendation for a specific user. Hand in both the notebook and the HTML-export of the notebook.
 
 #### Dataset
 
