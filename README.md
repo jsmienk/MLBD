@@ -2,11 +2,9 @@
 
 Course Machine Learning &amp; Big Data
 
-## Assignment 1: building a recommendation system
+## Assignment 1: Building a recommendation system
 
-This assignment should be carried out using NumPy, Pandas, Matplotlib, Jupyter Notebooks, NLTK, Scikit-learn and Spark ML.
-
-### Assignment
+*This assignment should be carried out using NumPy, Pandas, Matplotlib, Jupyter Notebooks, NLTK, Scikit-learn and Spark ML.*
 
 Many websites give users the possibility to rate items nowadays. Companies such as Amazon, Netflix, YouTube, IMDB and Bol.com use this information to recommend similar items to their users. The MovieLens dataset is a free dataset with a collection of movie ratings.
 In this assignment you will build 3 recommendation systems, using the following techniques: **Content-based**, **collaborative filtering** and **latent factor based**.
@@ -71,3 +69,48 @@ We will use a modified version of the MovieLens data set for this assignment. Yo
 - The following similarity measures should be used: cosine similarity, jaccard similarity and pearson correlation.
 - You are ONLY allowed to use the python packages NumPy, Pandas, Matplotlib, Jupyter Notebooks, NLTK and Scikit-learn.
 - The content-based filtering data set should be constructed using stemming, stopword removal and Tf-Idf
+
+## Assignment 2: Deep learning
+
+*This assignment should be carried out using Jupyter Notebooks, TensorFlow, TensorBoard, NumPy, Pandas and Matplotlib.*
+
+The deep learning assignment consists of two parts. At first you will experiment with fully-connected networks. You are going to build multiple neural networks with varying structures and activation functions for a given dataset. In the second assignment you are going to build a convolutional neural network for image classification purposes.
+
+### 1. Fully Connected Layers
+
+The provided dataset contains possible combinations for the game Yathzee. If you don’t know the rules for this dice game, please have a look at: [https://en.wikipedia.org/wiki/Yahtzee](Yahtzee).
+
+You will need to build a neural network that is able to predict the label for five thrown dice. The following labels are available:
+
+Name | Description
+--- | ---
+3-of-a-kind | Three dice the same
+4-of-a-kind | Four dice the same
+Full-house | Three of one number and two of another
+Small-straight | Four sequential dice
+Large-straight | Five sequential dice
+Yahtzee | All five dice the same
+Nothing | None of the above combinations
+
+#### Goal
+
+The overall goal is to experiment with deep learning and find out what gives you the best results. **Don’t forget to compare the results and write a conclusion!** Experiments we expect you to carry out:
+
+- Playing around with different networks sizes (different amount of layers, different amount of neurons per layer, at least 3 different networks with a minimum of 1 hidden layer per network).
+- Comparison of different activation functions (e.g. sigmoid and ReLU).
+- Difference with and without dropout.
+
+[Export your best model](https://www.tensorflow.org/guide/saved_model) and add a cell to your notebook that loads the model and is able to validate your model, by loading in a dataset from file and feeding it into the network. This cell should show the accuracy of the classifier.
+
+In order to build proper neural networks, keep in mind:
+
+- Create a proper output layer using SoftMax activation.
+- Convert the labels into one-hot-encoded values.
+- Use cross-entropy as loss function for classification.
+- Avoid overfitting by using dropout, a validation set and proper cross-validation.
+- Use Minibatch gradient descent, to speed up the training process.
+- Export all the important variables (such as the loss) to TensorBoard, so that you can monitor your training/testing. (or plot them using Matplotlib in your notebooks).
+
+### 2. Convolutional Neural Networks
+
+This assignment will be handed out in week 7.
