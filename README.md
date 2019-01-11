@@ -78,7 +78,7 @@ The deep learning assignment consists of two parts. At first you will experiment
 
 ### 1. Fully Connected Layers
 
-The provided dataset contains possible combinations for the game Yathzee. If you don’t know the rules for this dice game, please have a look at: [https://en.wikipedia.org/wiki/Yahtzee](Yahtzee).
+The provided dataset contains possible combinations for the game Yathzee. If you don’t know the rules for this dice game, please have a look at: [Yahtzee](https://en.wikipedia.org/wiki/Yahtzee).
 
 You will need to build a neural network that is able to predict the label for five thrown dice. The following labels are available:
 
