@@ -113,4 +113,30 @@ In order to build proper neural networks, keep in mind:
 
 ### 2. Convolutional Neural Networks
 
-This assignment will be handed out in week 7.
+For this assignment you are allowed to use one of the following datasets:
+
+- The famous Zalando Fashion-MNIST dataset (https://github.com/zalandoresearch/fashion-mnist).
+- The zipcode-dataset from Introduction To Machine Learning (see blackboard)
+
+There are plenty of examples of how to build convolutional neural networks for digit recognition and Fashion-MNIST. We advice you, however, to reuse the code from your first assignment. This time you also need to use convolutional layers and pooling layers.
+
+#### Goal
+You should experiment with different network structures and learn how to train and test neural networks. The goal is to understand what is going on in your network and visualizing that as well.
+
+Don’t forget to compare the results and write a conclusion!!! Experiments we expect you to carry out:
+
+- Playing around with different networks sizes (different amount of layers, different amount of neurons per layer, at least 3 different networks with a minimum of 2 convolutional layers per network).
+- Difference with and without dropout.
+- Visualize metrics such as accuracy and cross entropy for both the trainingset and testingset (to prove that you are not overfitting the network).
+
+Export your best model (see https://www.tensorflow.org/guide/saved_model) and add a cell to your notebook that loads the model and is able to validate your model, by loading in a dataset from file and feeding it into the network. This cell should show the accuracy of the classifier.
+
+In order to build proper neural networks, keep in mind:
+
+- Use at least 2 convolutional layers in each network.
+- Create a proper output layer using SoftMax activation.
+- Convert the labels into one-hot-encoded values.
+- Use cross-entropy as loss function for classification.
+- Avoid overfitting by using dropout, a validation set and proper cross-validation.
+- Use Minibatch gradient descent, to speed up the training process.
+- Export all the important variables (such as the loss) to TensorBoard, so that you can monitor your training/testing. (or plot them using Matplotlib in your notebooks).
