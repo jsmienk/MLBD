@@ -104,7 +104,8 @@ venv.bak/
 .mypy_cache/
 
 # Tensorflow
-logs
+yahtzee-logs
+conv-logs
 conv-models
 
 # IntelliJ IDE
